@@ -5,7 +5,7 @@ var ship;
 function preload(){
 shipImgs=loadAnimation("ship-1.png","ship-2.png","ship-3.png","ship-4.png");
 seaImg=loadImage("sea.png");
-shipImgs=loadImage("ship-1.png","ship-2.png","ship-3.png","ship-4.png");
+shipImgs=loadAnimation("ship-1.png","ship-2.png","ship-3.png","ship-4.png");
 }
 
 function setup(){
@@ -15,7 +15,7 @@ function setup(){
   sea.scale=0.2;
   sea.velocityX=-0.2;
   ship=createSprite(200,200);
-  ship.addImage(shipImgs);
+  ship.addAnimation("rocking",shipImgs);
   ship.scale=0.2;
 }
 
